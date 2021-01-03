@@ -13,4 +13,4 @@ wget -Nnv https://raw.githubusercontent.com/liberodark/recalbox2batocera/main/in
 
 ### Compatibility :
 
-    Recalbox 7.x
+- Recalbox 6.x / 7.x
