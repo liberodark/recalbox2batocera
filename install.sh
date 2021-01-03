@@ -10,7 +10,6 @@ version="0.0.1"
 echo "Welcome on RecalBox2Batocera Script $version"
 
 do_clean() {
-    mount -o remount,rw /
     test -n "${GETPERPID}" && kill -9 "${GETPERPID}"
     rm -f "/recalbox/share/upgrade/boot.tar.xz"
     rm -f "/recalbox/share/upgrade/boot.tar.xz.md5"
@@ -131,6 +130,7 @@ fi
 
 echo "Run Recalbox to Batocera"
 # create folder
+mount -o remount,rw /
 mkdir -p /userdata/bios
 mkdir -p /userdata/cheats
 mkdir -p /userdata/decorations
